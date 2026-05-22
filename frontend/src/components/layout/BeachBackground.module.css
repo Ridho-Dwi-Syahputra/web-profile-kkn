@@ -1,0 +1,141 @@
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sky {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 0%, rgba(252, 211, 77, 0.10), transparent 55%),
+    radial-gradient(ellipse at 20% 30%, rgba(103, 232, 249, 0.08), transparent 55%),
+    linear-gradient(180deg,
+      #061B33 0%,
+      #0A2540 25%,
+      #144870 55%,
+      #1E6FA8 85%,
+      #2B7BAA 100%);
+}
+
+.horizonGlow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 48%;
+  height: 18%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(103, 232, 249, 0.12) 50%,
+    transparent
+  );
+  filter: blur(20px);
+}
+
+.sun {
+  position: absolute;
+  top: 12%;
+  right: 12%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(252, 211, 77, 0.85) 0%,
+    rgba(252, 211, 77, 0.45) 30%,
+    rgba(252, 211, 77, 0) 70%
+  );
+  filter: blur(2px);
+  animation: sunPulse 4s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.5),
+    rgba(103, 232, 249, 0.2)
+  );
+  animation: floatUp linear infinite;
+  will-change: transform, opacity;
+}
+
+.ocean {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 38%;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 140px;
+  will-change: transform;
+}
+
+.waveBack {
+  bottom: 0;
+  height: 180px;
+  opacity: 0.55;
+  animation: waveScroll 28s linear infinite;
+}
+
+.waveMid {
+  bottom: 30px;
+  height: 150px;
+  opacity: 0.75;
+  animation: waveScrollReverse 20s linear infinite;
+}
+
+.waveFront {
+  bottom: 60px;
+  height: 120px;
+  opacity: 0.85;
+  animation: waveScroll 14s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .sun {
+    width: 90px;
+    height: 90px;
+    top: 10%;
+    right: 8%;
+  }
+
+  .waveBack {
+    height: 130px;
+  }
+  .waveMid {
+    height: 110px;
+    bottom: 20px;
+  }
+  .waveFront {
+    height: 90px;
+    bottom: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave,
+  .sun,
+  .bubble {
+    animation: none;
+  }
+}

@@ -1,0 +1,71 @@
+:root {
+  /* ===== Ocean / Beach Palette ===== */
+  --primary: #0A2540;        /* deep navy ocean */
+  --secondary: #1E4D7B;      /* mid ocean blue */
+  --accent: #22D3EE;         /* cyan / turquoise */
+  --accent-soft: #67E8F9;    /* light cyan */
+  --sun: #FCD34D;            /* warm sun accent */
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #C7DDF2;  /* soft sky blue */
+  --text-muted: #8FB4D8;
+
+  /* Glassmorphism */
+  --card-bg: rgba(15, 50, 90, 0.45);
+  --card-bg-strong: rgba(15, 50, 90, 0.65);
+  --border: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.24);
+  --overlay: rgba(10, 37, 64, 0.7);
+  --footer-bg: rgba(5, 21, 40, 0.92);
+  --section-alt: rgba(8, 31, 53, 0.35);
+
+  /* Accent rgba helpers (for components needing transparent accent) */
+  --accent-rgb: 34, 211, 238;
+  --primary-rgb: 10, 37, 64;
+
+  /* ===== Category Colors (Poin) — disesuaikan untuk tema biru ===== */
+  --cat-organik: #4ADE80;
+  --cat-organik-bg: rgba(74, 222, 128, 0.12);
+  --cat-organik-border: rgba(74, 222, 128, 0.3);
+
+  --cat-kertas: #60A5FA;
+  --cat-kertas-bg: rgba(96, 165, 250, 0.12);
+  --cat-kertas-border: rgba(96, 165, 250, 0.3);
+
+  --cat-plastik: #FBBF24;
+  --cat-plastik-bg: rgba(251, 191, 36, 0.12);
+  --cat-plastik-border: rgba(251, 191, 36, 0.3);
+
+  --cat-minyak: #FB923C;
+  --cat-minyak-bg: rgba(251, 146, 60, 0.12);
+  --cat-minyak-border: rgba(251, 146, 60, 0.3);
+
+  /* ===== Typography ===== */
+  --font-heading: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+  --font-body: 'Inter', 'Poppins', sans-serif;
+
+  /* ===== Spacing ===== */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --container-max: 1200px;
+  --container-padding: 24px;
+  --section-padding: 80px;
+
+  /* ===== Shadows ===== */
+  --shadow-card: 0 12px 40px rgba(0, 30, 60, 0.35);
+  --shadow-card-hover: 0 20px 60px rgba(0, 30, 60, 0.5);
+  --shadow-glow: 0 8px 30px rgba(34, 211, 238, 0.35);
+
+  /* ===== Z-index ===== */
+  --z-bg: -2;
+  --z-navbar: 1000;
+  --z-drawer: 1100;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --container-padding: 16px;
+    --section-padding: 60px;
+  }
+}

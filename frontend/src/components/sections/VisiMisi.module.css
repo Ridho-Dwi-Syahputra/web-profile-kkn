@@ -1,0 +1,54 @@
+.visiCard {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 32px;
+}
+
+.visiIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(34, 211, 238, 0.15);
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.visiQuote {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.misiGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.misiCard {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px 20px;
+}
+
+.misiNum {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--accent);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.misiText {
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}

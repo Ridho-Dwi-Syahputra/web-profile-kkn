@@ -1,0 +1,32 @@
+.placeholder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.12), transparent 60%),
+    linear-gradient(135deg, var(--secondary), var(--primary));
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.rounded-sm {
+  border-radius: var(--radius-sm);
+}
+
+.rounded-md {
+  border-radius: var(--radius);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.icon {
+  color: var(--text-secondary);
+  opacity: 0.4;
+}

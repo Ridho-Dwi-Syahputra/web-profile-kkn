@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.media {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  font-size: 0.98rem;
+}
+
+.cta {
+  margin-top: 14px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,42 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.tabList {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  border-color: rgba(34, 211, 238, 0.35);
+}
+
+.active {
+  background: rgba(34, 211, 238, 0.15);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.panel {
+  animation: fadeIn 0.3s ease;
+}

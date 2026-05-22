@@ -1,0 +1,60 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.open {
+  border-color: var(--accent);
+  background: rgba(34, 211, 238, 0.06);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 18px 22px;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.head:hover {
+  color: var(--accent);
+}
+
+.question {
+  flex: 1;
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+.body {
+  padding: 0 22px 18px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  animation: fadeIn 0.2s ease;
+}

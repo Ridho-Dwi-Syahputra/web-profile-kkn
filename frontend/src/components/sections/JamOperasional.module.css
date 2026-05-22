@@ -1,0 +1,36 @@
+.table {
+  max-width: 500px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.hari {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.jam {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.tutup .jam {
+  color: var(--text-secondary);
+  font-style: italic;
+}
