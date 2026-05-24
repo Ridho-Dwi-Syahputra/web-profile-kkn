@@ -59,7 +59,7 @@ export const kegiatan = [
 
 export const catatanPenting = [
   'Bank Sampah ini merupakan satu-satunya bank sampah dengan fasilitas mandiri di Kota Padang, di bawah binaan CSR Pertamina.',
-  'Diinisiasi tahun 2024 oleh Rumah Zakat melalui program Relawan Inspirasi. Tanah hibah dari Ustaz untuk kegiatan sosial sampah selama 5 tahun.',
+  'Diinisiasi tahun 2024 oleh Rumah Zakat melalui program Relawan Inspirasi. Tanah hibah dari Ustadz Fadly untuk kegiatan sosial sampah selama 5 tahun.',
   'Gedung dibangun atas kerja sama CSR Pertamina, sementara struktur dibantu oleh Dinas PUPR.',
   'Memiliki panel surya 5.000 watt sebagai sumber listrik mandiri — gedung tetap menyala saat pemadaman.',
   'Bank Sampah mengelola sampah anorganik (plastik, kertas, logam, kaca, elektronik) dan sampah organik melalui pengolahan maggot. Plastik diolah menjadi bio solar di fasilitas Kampung Pinang.',

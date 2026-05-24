@@ -41,7 +41,7 @@ export default function LokasiKontak() {
           <div className={styles.map}>
             <iframe
               className={styles.mapFrame}
-              src="https://maps.google.com/maps?q=Bank+Sampah+Teluk+Kabung+Tengah,+Bungus+Teluk+Kabung,+Padang,+Sumatera+Barat&output=embed&z=16&hl=id"
+              src="https://maps.google.com/maps?q=WCG6%2B5PX+BSU+Sejahtera+Bank+Sampah,+Bungus+Teluk+Kabung,+Padang&output=embed&z=17&hl=id"
               title="Lokasi Bank Sampah Unit Teluk Kabung Tengah"
               allowFullScreen
               loading="lazy"

@@ -1,5 +1,5 @@
 export const pengurus = [
-  { id: 1, nama: 'Bapak Fadli', jabatan: 'Koordinator', level: 0 },
+  { id: 1, nama: 'Ustadz Fadly', jabatan: 'Koordinator', level: 0 },
   { id: 2, nama: 'TBD', jabatan: 'Sekretaris', level: 1 },
   { id: 3, nama: 'TBD', jabatan: 'Bendahara', level: 1 },
   { id: 4, nama: 'TBD', jabatan: 'Anggota', level: 1 },
@@ -9,7 +9,7 @@ export const infoOperasional = [
   {
     no: 1,
     title: 'Koordinator',
-    desc: 'Bank Sampah dikoordinasikan oleh Bapak Fadli yang bertanggung jawab atas seluruh kegiatan operasional dan pengembangan fasilitas.',
+    desc: 'Bank Sampah dikoordinasikan oleh Ustadz Fadly yang bertanggung jawab atas seluruh kegiatan operasional dan pengembangan fasilitas.',
   },
   {
     no: 2,

@@ -80,4 +80,4 @@ export const dpl = {
 };
 
 export const ucapanTerimaKasih =
-  'Kami mengucapkan terima kasih kepada seluruh pengurus Bank Sampah Unit Teluk Kabung Tengah, Bapak Fadli selaku koordinator, warga Kelurahan Teluk Kabung Tengah, serta pihak kelurahan dan Universitas Andalas atas dukungannya selama program KKN berlangsung.';
+  'Kami mengucapkan terima kasih kepada seluruh pengurus Bank Sampah Unit Teluk Kabung Tengah, Ustadz Fadly selaku koordinator, warga Kelurahan Teluk Kabung Tengah, serta pihak kelurahan dan Universitas Andalas atas dukungannya selama program KKN berlangsung.';

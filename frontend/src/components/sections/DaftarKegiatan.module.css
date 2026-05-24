@@ -3,19 +3,22 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  /* Each row auto-sizes to the tallest card in that row */
+  grid-auto-rows: auto;
+  align-items: stretch;
 }
 
 /* ── Card wrapper ──────────────────────────────────────── */
 .card {
   position: relative;
-  overflow: hidden;
+  aspect-ratio: 16 / 9;        /* preferred — grows when content exceeds */
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
+  overflow: hidden;
   cursor: pointer;
   transition:
     border-color 0.3s ease,
     box-shadow 0.3s ease;
-  /* GPU layer */
   transform: translateZ(0);
 }
 
@@ -25,17 +28,21 @@
   box-shadow: 0 8px 32px rgba(34, 211, 238, 0.12);
 }
 
-/* ── Image area ────────────────────────────────────────── */
+/* ── Image area: fills the card (absolute) ─────────────── */
 .imageArea {
-  width: 100%;
-  line-height: 0; /* remove inline-block gap */
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  line-height: 0;
 }
 
+/* Override ImagePlaceholder's inline aspect-ratio so it stretches */
 .image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: unset !important;
+  border-radius: 0 !important;
   display: block;
-  border-radius: 0; /* card handles corners */
 }
 
 /* ── Number badge (top-left, always visible) ───────────── */
@@ -51,7 +58,7 @@
   padding: 3px 10px;
   border-radius: 50px;
   border: 1px solid rgba(34, 211, 238, 0.3);
-  z-index: 3;
+  z-index: 4;
   pointer-events: none;
   letter-spacing: 0.3px;
 }
@@ -62,6 +69,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   padding: 32px 14px 14px;
   background: linear-gradient(
     to top,
@@ -72,7 +80,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  z-index: 2;
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
@@ -99,30 +106,37 @@
   min-width: 0;
 }
 
-/* ── Overlay (hover / click state) ─────────────────────── */
+/* ── Overlay (in flow — drives card height when content tall) ─ */
 .overlay {
-  position: absolute;
-  inset: 0;
+  position: relative;          /* ← in flow, contributes to card height */
+  z-index: 3;
+  min-height: 100%;            /* fill card area when content short */
   background: linear-gradient(
     155deg,
     rgba(10, 37, 64, 0.96) 0%,
     rgba(15, 55, 100, 0.97) 100%
   );
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
   padding: 20px 18px;
+  visibility: hidden;
   opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-  z-index: 4;
   pointer-events: none;
+  transition:
+    opacity 0.35s ease,
+    visibility 0s linear 0.35s;
 }
 
 .card:hover .overlay,
 .card.open .overlay {
+  visibility: visible;
   opacity: 1;
-  transform: translateY(0);
   pointer-events: auto;
+  transition:
+    opacity 0.35s ease,
+    visibility 0s linear 0s;
 }
 
 /* Cyan top-edge accent when open/hover */
@@ -176,6 +190,10 @@
   color: var(--text-secondary);
   font-size: 0.85rem;
   line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: anywhere;
 }
 
 /* ── Responsive ─────────────────────────────────────────── */

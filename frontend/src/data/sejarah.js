@@ -2,7 +2,7 @@ export const sejarah = [
   {
     year: '2024',
     title: 'Pendirian Bank Sampah',
-    desc: 'Diinisiasi oleh Rumah Zakat melalui program Relawan Inspirasi. Tanah dihibahkan oleh Ustaz untuk kegiatan sosial sampah selama 5 tahun. Edukasi pemilahan sampah mulai dijalankan ke warga.',
+    desc: 'Diinisiasi oleh Rumah Zakat melalui program Relawan Inspirasi. Tanah dihibahkan oleh Ustadz Fadly untuk kegiatan sosial sampah selama 5 tahun. Edukasi pemilahan sampah mulai dijalankan ke warga.',
   },
   {
     year: '2025',
