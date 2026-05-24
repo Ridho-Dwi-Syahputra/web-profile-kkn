@@ -7,20 +7,33 @@
 .mapCol {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .map {
   margin-bottom: 16px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.mapFrame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
 }
 
 .address {
   color: var(--text-secondary);
   font-size: 0.95rem;
+  overflow-wrap: anywhere;
 }
 
 .contactCol {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .contactList {
@@ -32,13 +45,19 @@
 .contactCard {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  padding: 20px 22px;
+  gap: clamp(10px, 2.5vw, 16px);
+  padding: clamp(14px, 3vw, 22px);
+  min-width: 0;
+}
+
+.contactCard > div {
+  min-width: 0;
+  flex: 1;
 }
 
 .contactIcon {
-  width: 40px;
-  height: 40px;
+  width: clamp(36px, 8vw, 40px);
+  height: clamp(36px, 8vw, 40px);
   border-radius: var(--radius-sm);
   background: rgba(34, 211, 238, 0.15);
   color: var(--accent);
@@ -49,7 +68,7 @@
 }
 
 .contactLabel {
-  font-size: 0.78rem;
+  font-size: clamp(0.7rem, 1.8vw, 0.78rem);
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -60,8 +79,10 @@
   font-family: var(--font-heading);
   font-weight: 600;
   color: var(--text-primary);
-  font-size: 0.95rem;
+  font-size: clamp(0.82rem, 2.2vw, 0.95rem);
   line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 @media (min-width: 1024px) {

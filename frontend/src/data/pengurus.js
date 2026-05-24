@@ -13,17 +13,17 @@ export const infoOperasional = [
   },
   {
     no: 2,
-    title: 'Satu-Satunya di Kecamatan',
-    desc: 'Bank Sampah ini merupakan satu-satunya unit pengelola sampah anorganik di Kecamatan Bungus Teluk Kabung.',
+    title: 'Fasilitas Mandiri Pertama di Kota Padang',
+    desc: 'Bank Sampah ini merupakan satu-satunya bank sampah dengan fasilitas mandiri di Kota Padang, di bawah binaan CSR Pertamina.',
   },
   {
     no: 3,
     title: 'Dukungan Mitra',
-    desc: 'Fasilitas dan fondasi awal bank sampah didukung oleh kerja sama dengan Pertamina, sementara pembangunan tahap kedua dibantu oleh Dinas PU.',
+    desc: 'Gedung dan sarana dibangun atas kerja sama dengan CSR Pertamina, sementara pembangunan struktur dibantu oleh Dinas PUPR. Pendirian awal diinisiasi Rumah Zakat.',
   },
   {
     no: 4,
-    title: 'Rencana Pengembangan',
-    desc: 'Terdapat rencana pembuatan bengkel las bertenaga listrik tenaga surya (panel surya) untuk melayani kebutuhan masyarakat dan nelayan sekitar.',
+    title: 'Fasilitas Pendukung',
+    desc: 'Memiliki panel surya 5.000 watt sebagai sumber listrik mandiri, pengolahan sampah organik via maggot, dan pengolahan plastik menjadi bio solar (1,5 kg plastik = 1 liter solar) di fasilitas Kampung Pinang.',
   },
 ];

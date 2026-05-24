@@ -1,7 +1,6 @@
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import Badge from '../ui/Badge.jsx';
 import Card from '../ui/Card.jsx';
-import ImagePlaceholder from '../ui/ImagePlaceholder.jsx';
 import SectionHeader from '../ui/SectionHeader.jsx';
 import { kontak } from '../../data/kontak.js';
 import styles from './LokasiKontak.module.css';
@@ -40,7 +39,14 @@ export default function LokasiKontak() {
             subtitle="Berlokasi di Kelurahan Teluk Kabung Tengah, Kecamatan Bungus Teluk Kabung, Kota Padang."
           />
           <div className={styles.map}>
-            <ImagePlaceholder aspectRatio="16/9" rounded="lg" iconSize={56} />
+            <iframe
+              className={styles.mapFrame}
+              src="https://maps.google.com/maps?q=Bank+Sampah+Teluk+Kabung+Tengah,+Bungus+Teluk+Kabung,+Padang,+Sumatera+Barat&output=embed&z=16&hl=id"
+              title="Lokasi Bank Sampah Unit Teluk Kabung Tengah"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
           <p className={styles.address}>{kontak.alamat}</p>
         </div>

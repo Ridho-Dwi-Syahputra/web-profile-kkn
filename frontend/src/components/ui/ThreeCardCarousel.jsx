@@ -101,8 +101,8 @@ export default function ThreeCardCarousel({ members }) {
       <div className={styles.viewport}>
         {members.map((m, idx) => {
           const offset = getOffset(idx);
+          if (Math.abs(offset) > 2) return null;
           const isCenter = offset === 0;
-          const isSide = Math.abs(offset) === 1;
           return (
             <article
               key={m.id}

@@ -3,9 +3,12 @@ import Badge from '../components/ui/Badge.jsx';
 import PageHeader from '../components/ui/PageHeader.jsx';
 import SectionHeader from '../components/ui/SectionHeader.jsx';
 import ThreeCardCarousel from '../components/ui/ThreeCardCarousel.jsx';
+import DplSection from '../components/sections/DplSection.jsx';
 import InfoTim from '../components/sections/InfoTim.jsx';
 import UcapanTerimaKasih from '../components/sections/UcapanTerimaKasih.jsx';
 import { tim } from '../data/tim.js';
+import logoKkn from '../assets/logo kkn_landscape.png';
+import styles from './Tim.module.css';
 
 export default function Tim() {
   return (
@@ -15,7 +18,26 @@ export default function Tim() {
         title="Tim KKN Nabuang Sarok"
         subtitle="Tujuh mahasiswa Universitas Andalas yang berkolaborasi membangun website ini."
       />
+
+      <section className={styles.logoSection}>
+        <div className="container">
+          <div className={styles.logoWrap}>
+            <img
+              src={logoKkn}
+              alt="Logo KKN Nabuang Sarok 2026 — Kelompok 4"
+              className={styles.logo}
+            />
+            <p className={styles.logoCaption}>
+              Tim KKN Nabuang Sarok 2026 — Kelompok 4
+            </p>
+          </div>
+        </div>
+      </section>
+
       <InfoTim />
+
+      <DplSection />
+
       <section className="section">
         <div className="container">
           <SectionHeader
@@ -27,6 +49,7 @@ export default function Tim() {
           <ThreeCardCarousel members={tim} />
         </div>
       </section>
+
       <UcapanTerimaKasih />
     </>
   );

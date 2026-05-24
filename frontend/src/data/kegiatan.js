@@ -1,10 +1,10 @@
 export const kegiatan = [
   {
     id: 1,
-    nama: 'Pengumpulan Sampah Anorganik',
+    nama: 'Pengumpulan Sampah Rumah Tangga',
     icon: 'Recycle',
     frekuensi: 'Rutin Mingguan',
-    desc: 'Warga mengumpulkan sampah anorganik (plastik, kertas, logam, kaca) dari rumah masing-masing untuk disetor.',
+    desc: 'Warga mengumpulkan sampah rumah tangga (plastik, kertas, logam, kaca, dan sampah organik) dari rumah masing-masing untuk disetor ke Bank Sampah.',
   },
   {
     id: 2,
@@ -58,9 +58,9 @@ export const kegiatan = [
 ];
 
 export const catatanPenting = [
-  'Bank Sampah ini merupakan satu-satunya unit pengelola sampah anorganik di Kecamatan Bungus Teluk Kabung.',
-  'Fasilitas dan fondasi awal dibangun atas kerja sama dengan Pertamina.',
-  'Pembangunan tahap kedua dibantu oleh Dinas PU.',
-  'Terdapat rencana pengembangan bengkel las bertenaga listrik dari panel surya.',
-  'Bank Sampah fokus pada sampah anorganik — plastik, kertas, logam, kaca, dan elektronik.',
+  'Bank Sampah ini merupakan satu-satunya bank sampah dengan fasilitas mandiri di Kota Padang, di bawah binaan CSR Pertamina.',
+  'Diinisiasi tahun 2024 oleh Rumah Zakat melalui program Relawan Inspirasi. Tanah hibah dari Ustaz untuk kegiatan sosial sampah selama 5 tahun.',
+  'Gedung dibangun atas kerja sama CSR Pertamina, sementara struktur dibantu oleh Dinas PUPR.',
+  'Memiliki panel surya 5.000 watt sebagai sumber listrik mandiri — gedung tetap menyala saat pemadaman.',
+  'Bank Sampah mengelola sampah anorganik (plastik, kertas, logam, kaca, elektronik) dan sampah organik melalui pengolahan maggot. Plastik diolah menjadi bio solar di fasilitas Kampung Pinang.',
 ];

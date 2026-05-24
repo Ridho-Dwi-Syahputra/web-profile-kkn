@@ -16,8 +16,9 @@ export default function Footer() {
             <span className={styles.brandName}>Bank Sampah</span>
           </Link>
           <p className={styles.tagline}>
-            Unit pengelola sampah anorganik berbasis masyarakat di Kelurahan
-            Teluk Kabung Tengah, bagian dari Program Nabuang Sarok.
+            Bank Sampah berbasis masyarakat yang mengelola sampah organik
+            (maggot) dan anorganik (plastik, kertas, logam, kaca) di Kelurahan
+            Teluk Kabung Tengah.
           </p>
         </div>
 

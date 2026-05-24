@@ -73,5 +73,11 @@ export const infoTim = {
   universitas: 'Universitas Andalas',
 };
 
+export const dpl = {
+  nama: 'Dr. Indraddin, M.Si',
+  jabatan: 'Dosen Pembimbing Lapangan',
+  institusi: 'Universitas Andalas',
+};
+
 export const ucapanTerimaKasih =
   'Kami mengucapkan terima kasih kepada seluruh pengurus Bank Sampah Unit Teluk Kabung Tengah, Bapak Fadli selaku koordinator, warga Kelurahan Teluk Kabung Tengah, serta pihak kelurahan dan Universitas Andalas atas dukungannya selama program KKN berlangsung.';

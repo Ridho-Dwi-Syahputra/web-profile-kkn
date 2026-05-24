@@ -1,0 +1,43 @@
+.logoSection {
+  padding: 32px 0 16px;
+}
+
+.logoWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  display: block;
+}
+
+.logoCaption {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 480px) {
+  .logoWrap {
+    padding: 20px 18px;
+  }
+  .logo {
+    max-width: 100%;
+  }
+}

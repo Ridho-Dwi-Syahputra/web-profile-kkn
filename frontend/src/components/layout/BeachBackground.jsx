@@ -3,7 +3,7 @@ import styles from './BeachBackground.module.css';
 const wavePath =
   'M0,60 C150,20 350,100 600,60 C850,20 1050,100 1200,60 L1200,120 L0,120 Z';
 
-const bubbles = Array.from({ length: 8 }, (_, i) => ({
+const bubbles = Array.from({ length: 5 }, (_, i) => ({
   id: i,
   size: 4 + Math.random() * 8,
   left: 5 + Math.random() * 90,

@@ -12,7 +12,7 @@ export default function ProfilSection() {
           <SectionHeader
             badge={<Badge>Profil</Badge>}
             title="Bank Sampah Unit Teluk Kabung Tengah"
-            subtitle="Profil singkat unit pengelola sampah anorganik berbasis masyarakat."
+            subtitle="Profil singkat Bank Sampah berbasis masyarakat di Kelurahan Teluk Kabung Tengah."
           />
           <dl className={styles.list}>
             {profilBank.map((row) => (
