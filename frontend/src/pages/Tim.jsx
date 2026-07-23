@@ -24,11 +24,11 @@ export default function Tim() {
           <div className={styles.logoWrap}>
             <img
               src={logoKkn}
-              alt="Logo KKN Nabuang Sarok 2026 — Kelompok 4"
+              alt="Logo KKN Nabuang Sarok 2026 - Kelompok 4"
               className={styles.logo}
             />
             <p className={styles.logoCaption}>
-              Tim KKN Nabuang Sarok 2026 — Kelompok 4
+              Tim KKN Nabuang Sarok 2026 - Kelompok 4
             </p>
           </div>
         </div>

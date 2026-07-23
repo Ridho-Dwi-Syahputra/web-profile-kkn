@@ -18,12 +18,21 @@ export default function DplSection() {
         />
         <Card hoverable={false} className={styles.card}>
           <div className={styles.avatarWrap}>
-            <ImagePlaceholder
-              aspectRatio="1/1"
-              rounded="full"
-              iconSize={36}
-              className={styles.avatar}
-            />
+            {dpl.foto ? (
+              <img 
+                src={dpl.foto} 
+                alt={`Foto ${dpl.nama}`} 
+                className={styles.avatar}
+                style={{ objectFit: 'cover', borderRadius: '50%' }}
+              />
+            ) : (
+              <ImagePlaceholder
+                aspectRatio="1/1"
+                rounded="full"
+                iconSize={36}
+                className={styles.avatar}
+              />
+            )}
           </div>
           <h3 className={styles.name}>{dpl.nama}</h3>
           <div className={styles.badge}>

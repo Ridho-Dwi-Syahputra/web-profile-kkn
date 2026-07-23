@@ -112,18 +112,34 @@ export default function ThreeCardCarousel({ members }) {
               aria-hidden={!isCenter}
             >
               <div className={styles.photo}>
+                {m.foto && isCenter && (
+                  <div 
+                    className={styles.photoBgBlur} 
+                    style={{ backgroundImage: `url(${m.foto})` }}
+                    aria-hidden="true"
+                  />
+                )}
                 {isCenter && (
                   <span className={styles.counter}>
                     {active + 1}/{total}
                   </span>
                 )}
                 <div className={styles.avatarWrap}>
-                  <ImagePlaceholder
-                    aspectRatio="1/1"
-                    rounded="full"
-                    iconSize={isCenter ? 36 : 24}
-                    className={isCenter ? styles.avatarCenter : styles.avatarSide}
-                  />
+                  {m.foto ? (
+                    <img 
+                      src={m.foto} 
+                      alt={`Foto ${m.nama}`} 
+                      className={isCenter ? styles.avatarCenter : styles.avatarSide} 
+                      style={{ objectFit: 'cover', borderRadius: '50%' }}
+                    />
+                  ) : (
+                    <ImagePlaceholder
+                      aspectRatio="1/1"
+                      rounded="full"
+                      iconSize={isCenter ? 36 : 24}
+                      className={isCenter ? styles.avatarCenter : styles.avatarSide}
+                    />
+                  )}
                 </div>
               </div>
               <div className={styles.info}>

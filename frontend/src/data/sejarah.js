@@ -37,7 +37,7 @@ export const profilBank = [
   },
   { label: 'Pembina', value: 'CSR Pertamina' },
   { label: 'Inisiator', value: 'Rumah Zakat (Program Relawan Inspirasi)' },
-  { label: 'Status', value: 'Aktif — fasilitas mandiri di Kota Padang' },
+  { label: 'Status', value: 'Aktif - fasilitas mandiri di Kota Padang' },
 ];
 
 export const tentangNasa = [

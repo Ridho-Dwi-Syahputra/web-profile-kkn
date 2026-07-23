@@ -78,6 +78,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.photoBgBlur {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  right: -30px;
+  bottom: -30px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: 0;
 }
 
 .center .photo {
@@ -100,12 +114,15 @@
   padding: 4px 10px;
   border-radius: 50px;
   border: 1px solid rgba(34, 211, 238, 0.35);
+  z-index: 1;
 }
 
 .avatarWrap {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .avatarCenter {
@@ -113,6 +130,8 @@
   height: 88px;
   border: 2px solid var(--accent);
   aspect-ratio: 1 / 1;
+  position: relative;
+  z-index: 1;
 }
 
 .avatarSide {
@@ -120,6 +139,8 @@
   height: 56px;
   border: 2px solid var(--border);
   aspect-ratio: 1 / 1;
+  position: relative;
+  z-index: 1;
 }
 
 .info {

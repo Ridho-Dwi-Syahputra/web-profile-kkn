@@ -10,19 +10,56 @@
   width: 100%;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(8px, 2vw, 20px);
+.treeForks {
   width: 100%;
-  max-width: 760px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forkStem {
+  width: 2px;
+  height: 24px;
+  background: var(--border);
+}
+
+.forkHorizontal {
+  width: calc(50% + (clamp(10px, 4vw, 40px) / 2));
+  height: 2px;
+  background: var(--border);
+}
+
+.forkBranches {
+  width: calc(50% + (clamp(10px, 4vw, 40px) / 2));
+  display: flex;
+  justify-content: space-between;
+}
+
+.forkBranch {
+  width: 2px;
+  height: 24px;
+  background: var(--border);
+}
+
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(10px, 4vw, 40px);
+  width: 100%;
+  max-width: 600px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .connector {
   width: 2px;
-  height: 36px;
-  background: linear-gradient(180deg, var(--accent), var(--border));
-  border-radius: 2px;
+  height: 28px;
+  background: var(--border);
 }
 
 .card {

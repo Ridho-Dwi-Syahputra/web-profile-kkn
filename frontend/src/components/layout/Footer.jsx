@@ -62,7 +62,7 @@ export default function Footer() {
         <div className={`container ${styles.bottomInner}`}>
           <p className={styles.copy}>
             © {new Date().getFullYear()} Bank Sampah Unit Teluk Kabung Tengah.
-            Dibangun oleh Tim KKN Nabuang Sarok — Universitas Andalas.
+            Dibangun oleh Tim KKN Nabuang Sarok - Universitas Andalas.
           </p>
           <div className={styles.social}>
             <a

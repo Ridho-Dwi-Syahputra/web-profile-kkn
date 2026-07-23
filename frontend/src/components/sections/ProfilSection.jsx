@@ -1,5 +1,5 @@
 import Badge from '../ui/Badge.jsx';
-import ImagePlaceholder from '../ui/ImagePlaceholder.jsx';
+import imgBankSampah from '../../assets/beranda/BankSampah.jpg';
 import SectionHeader from '../ui/SectionHeader.jsx';
 import { profilBank } from '../../data/sejarah.js';
 import styles from './ProfilSection.module.css';
@@ -24,7 +24,7 @@ export default function ProfilSection() {
           </dl>
         </div>
         <div className={styles.media}>
-          <ImagePlaceholder aspectRatio="4/3" rounded="lg" iconSize={64} />
+          <img src={imgBankSampah} alt="Fasilitas Bank Sampah" className={styles.profilImage} />
         </div>
       </div>
     </section>

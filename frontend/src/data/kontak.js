@@ -1,18 +1,18 @@
 export const kontak = {
   alamat:
     'Kelurahan Teluk Kabung Tengah, Kec. Bungus Teluk Kabung, Kota Padang, Sumatera Barat',
-  whatsapp: '+62 812-XXXX-XXXX',
-  email: 'banksampah.tkbtengah@email.com',
-  jamSingkat: 'Buka 24 Jam — Senin s.d. Minggu',
+  whatsapp: '62 812-6178-5406',
+  email: 'banksampahtktsejahtera@gmail.com',
+  jamSingkat: 'Buka setiap hari dari pukul 08:00 - 17:00',
   instagram: '#',
 };
 
 export const jamOperasional = [
-  { hari: 'Senin', jam: '24 Jam', tutup: false },
-  { hari: 'Selasa', jam: '24 Jam', tutup: false },
-  { hari: 'Rabu', jam: '24 Jam', tutup: false },
-  { hari: 'Kamis', jam: '24 Jam', tutup: false },
-  { hari: 'Jumat', jam: '24 Jam', tutup: false },
-  { hari: 'Sabtu', jam: '24 Jam', tutup: false },
-  { hari: 'Minggu', jam: '24 Jam', tutup: false },
+  { hari: 'Senin', jam: '08:00 - 17:00', tutup: false },
+  { hari: 'Selasa', jam: '08:00 - 17:00', tutup: false },
+  { hari: 'Rabu', jam: '08:00 - 17:00', tutup: false },
+  { hari: 'Kamis', jam: '08:00 - 17:00', tutup: false },
+  { hari: 'Jumat', jam: '08:00 - 17:00', tutup: false },
+  { hari: 'Sabtu', jam: '08:00 - 17:00', tutup: false },
+  { hari: 'Minggu', jam: '08:00 - 17:00', tutup: false },
 ];

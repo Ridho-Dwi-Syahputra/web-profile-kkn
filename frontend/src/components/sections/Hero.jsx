@@ -1,7 +1,7 @@
 import { ArrowRight, Leaf } from 'lucide-react';
 import Badge from '../ui/Badge.jsx';
 import Button from '../ui/Button.jsx';
-import ImagePlaceholder from '../ui/ImagePlaceholder.jsx';
+import imgBankSampah from '../../assets/beranda/BankSampah.jpg';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -27,14 +27,11 @@ export default function Hero() {
             <Button to="/tentang" variant="primary" icon={ArrowRight}>
               Pelajari Lebih Lanjut
             </Button>
-            <Button to="/kegiatan" variant="outline">
-              Lihat Kegiatan
-            </Button>
           </div>
         </div>
 
         <div className={styles.visual}>
-          <ImagePlaceholder aspectRatio="4/3" rounded="lg" iconSize={72} />
+          <img src={imgBankSampah} alt="Fasilitas Bank Sampah TKT Sejahtera" className={styles.heroImage} />
         </div>
       </div>
     </section>

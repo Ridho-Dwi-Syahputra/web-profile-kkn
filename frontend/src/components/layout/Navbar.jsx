@@ -21,8 +21,8 @@ export default function Navbar() {
     >
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.brand} aria-label="Beranda">
-          <span className={styles.logo} aria-hidden="true">
-            <Recycle size={22} strokeWidth={2.4} />
+          <span className={styles.logoWrapper} aria-hidden="true">
+            <img src="/logo.jpeg" alt="Logo Bank Sampah TKT" className={styles.logoImg} />
           </span>
           <span className={styles.brandText}>
             <span className={styles.brandName}>Bank Sampah</span>

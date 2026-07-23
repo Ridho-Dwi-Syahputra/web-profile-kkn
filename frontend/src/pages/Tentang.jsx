@@ -12,7 +12,7 @@ export default function Tentang() {
       <PageHeader
         badge={<Badge icon={Leaf}>Profil</Badge>}
         title="Tentang Bank Sampah"
-        subtitle="Mengenal lebih dekat Bank Sampah Unit Teluk Kabung Tengah — sejarah, visi, misi, dan komitmen kami."
+        subtitle="Mengenal lebih dekat Bank Sampah Unit Teluk Kabung Tengah - sejarah, visi, misi, dan komitmen kami."
       />
       <ProfilSection />
       <VisiMisi />

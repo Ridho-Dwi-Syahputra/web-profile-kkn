@@ -1,8 +1,11 @@
 export const pengurus = [
-  { id: 1, nama: 'Ustadz Fadly', jabatan: 'Koordinator', level: 0 },
-  { id: 2, nama: 'TBD', jabatan: 'Sekretaris', level: 1 },
-  { id: 3, nama: 'TBD', jabatan: 'Bendahara', level: 1 },
-  { id: 4, nama: 'TBD', jabatan: 'Anggota', level: 1 },
+  { id: 1, nama: 'Fadly Dermawan, S.Pd, MM', jabatan: 'Ketua', level: 0 },
+  { id: 2, nama: 'Zakly', jabatan: 'Sekretaris', level: 1 },
+  { id: 3, nama: 'Afni', jabatan: 'Bendahara', level: 1 },
+  { id: 4, nama: 'Asril Chan', jabatan: 'Petugas operator', level: 2 },
+  { id: 5, nama: 'Dahlan', jabatan: 'Petugas magot', level: 2 },
+  { id: 6, nama: 'Yulianita, MM & Ruslimar', jabatan: 'Petugas kerajinan tangan', level: 3 },
+  { id: 7, nama: 'Ilham Firmansyah, SH', jabatan: 'Petugas pencacah', level: 3 },
 ];
 
 export const infoOperasional = [
